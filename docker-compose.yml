@@ -1,0 +1,9 @@
+version: "3"
+services:
+  sonarqube:
+    image: "sonarqube:7.9.1-community"
+    hostname: "sonarqube"
+    container_name: "sonarqube"
+    ports:
+      - "9000:9000"
+      - "9001:9001"

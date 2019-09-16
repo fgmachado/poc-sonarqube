@@ -15,14 +15,12 @@ public class PessoaServiceImpl implements PessoaService {
 	@Autowired
 	private PessoaRepository repository;
 	
-	@Override
 	public List<Pessoa> consultarTodas() {
 		return repository.findAll();
 	}
 
-	@Override
 	public Optional<Pessoa> consultarPorCpf(String cpf) {
 		return repository.findByCpf(cpf);
 	}
-
+	
 }

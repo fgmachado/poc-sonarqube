@@ -55,13 +55,4 @@ public class PessoaControllerTests {
 			.andExpect(jsonPath("$[0].cpf", is(pessoa.getCpf())));
 	}
 	
-	/*@Test
-	public void consultarPorCpf() throws Exception {
-		when(service.consultarPorCpf(CPF)).thenReturn(Optional.of(pessoa));
-		
-		mvc.perform(get("/pessoas/" + CPF).contentType(APPLICATION_JSON))
-			.andExpect(status().isOk())
-			.andExpect(jsonPath("$.cpf", is(pessoa.getCpf())));
-	}*/
-	
 }
